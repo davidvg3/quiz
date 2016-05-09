@@ -8,6 +8,9 @@ router.get('/', function(req, res, next) {
   res.render('index', {title: 'Quiz'});
 });
 
+router.get('/author', function(req, res, next) {
+  res.render('../views/author.ejs', {title: 'Quiz'});
+});
 //router.get('/question', quizController.question);
 //router.get('/check', quizController.check);
 module.exports = router;
